@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	models.InitDB("postgres", "postgres://robinson:Rpc3396@localhost/bookstore")
+	models.InitDB("postgres", "postgres://robinson:pword@localhost/bookstore")
 	http.HandleFunc("/books", booksIndex)
 	http.ListenAndServe(":9000", nil)
 }
